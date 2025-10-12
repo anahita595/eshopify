@@ -33,7 +33,7 @@ function addProduct() {
 function displayProducts() {
   const container = document.getElementById('productContainer');
   container.innerHTML = '';
-  products.forEach((product, index) => {
+  products.forEach((product) => {
     const div = document.createElement('div');
     div.classList.add('product');
     div.innerHTML = `
@@ -67,3 +67,4 @@ function clearCart() {
 // Initialize
 updateCartCount();
 displayProducts();
+
