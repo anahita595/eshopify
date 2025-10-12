@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eshopify</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Eshopify</div>
+  <div class="nav-links">
+    <div>Cart (<span id="cartCount">0</span>)</div>
+    <div><button onclick="clearCart()">Clear Cart</button></div>
+  </div>
+</nav>
+
+<!-- ADD PRODUCT FORM -->
+<section class="section">
+  <h2>Add a Product</h2>
+  <div class="add-product-form">
+    <input type="text" id="productName" placeholder="Product Name">
+    <input type="number" id="productPrice" placeholder="Price" min="0" step="0.01">
+    <input type="text" id="productImage" placeholder="Image filename in images/ folder">
+    <button onclick="addProduct()">Add Product</button>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section">
+  <h2>Products</h2>
+  <div class="products" id="productContainer">
+    <!-- Dynamically added products will appear here -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2025 Eshopify | All rights reserved
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
